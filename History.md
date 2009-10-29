@@ -1,4 +1,10 @@
 
+0.1.0 / 2009-10-29
+==================
+
+  * Added `ch update self` [#10]
+  * Fixed basename -s switch issue; using sed instead [#8]
+
 0.0.4 / 2009-10-08
 ==================
 
