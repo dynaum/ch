@@ -18,7 +18,9 @@
 
   * Very fast
   * High quality, well organized, moderated cheat sheets
-  * Few dependencies (unless your lame you will have them (sed, git, etc)
+  * Few dependencies (common now, you should have them (sed, git, etc))
+  * Self updating via `ch update self` 
+  * Instant cheat sheet updates via `ch update`
   * Tons of cheat sheets!
   
 ## Installation
