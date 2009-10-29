@@ -30,7 +30,7 @@ if [ -d $CH_SHEETS ]; then
         fi
         ;;
       search|find|list)
-        ch locate $2 | xargs -I '{}' basename '{}' .sheet | sort
+        ch locate $2 | sed 's|.*\/\(.*\)\.sheet|\1|g' | sort
         ;;
       read)
         find $CH_SHEETS -name $2.sheet -type f | xargs cat | less 
