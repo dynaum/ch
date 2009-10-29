@@ -89,6 +89,11 @@ Opens sheets matching [sheet] or all sheets in $EDITOR
 ## ch update
 
 Updates the cheat sheet repository to grab the latest changes.
+
+## ch update self
+
+Updates the 'ch' binary. clones the origin repository to /tmp/ch and
+sudo make installs automatically.
     
 ## ch help
 
