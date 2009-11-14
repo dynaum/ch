@@ -38,7 +38,9 @@ Output verbose help information for 'ch' :)
     
 ## ch [sheet]
 
-Outputs contents of the first sheet matching [sheet]
+Outputs contents of the first sheet matching [sheet]. For example if the
+cheat sheet 'css.properties.transitions.sheet' is available you may use `ch transitions`,
+`ch css.properties.tran`, etc. As long as only one sheet matches it will open (or the first match).
   
 ## ch locate [sheet]
 
