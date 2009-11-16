@@ -33,14 +33,14 @@ if [ -d $CH_SHEETS ]; then
         find $CH_SHEETS -name $2.sheet -type f | xargs cat | less 
         ;;
       update)
-				if [ "$2" == 'self' ]; then
-					cd /tmp && git clone $CH_ORIGIN && 
-					cd ch && sudo make install && 
-					echo -n 'Updated to ' && ch -v
-				else
-        	cd $CH_SHEETS
-        	git pull origin master 2> /dev/null
-				fi
+        if [ "$2" == 'self' ]; then
+          cd /tmp && git clone $CH_ORIGIN && 
+          cd ch && sudo make install && 
+          echo -n 'Updated to ' && ch -v
+        else
+          cd $CH_SHEETS
+          git pull origin master 2> /dev/null
+        fi
         ;;
       *)
         ch find $1 | head -n 1 | awk "{ print \"$CH_SHEETS/\" \$1 \".sheet\" }" | xargs cat | less
