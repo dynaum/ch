@@ -30,7 +30,7 @@
     
 Or if you do not wish to clone this repo:
 
-    $ cd /tmp && git clone git://github.com/visionmedia/ch.git && cd ch && sudo make install
+    $ cd /tmp && git clone http://github.com/dynaum/ch.git && cd ch && sudo make install
     
 ## ch ch
 
